@@ -44,8 +44,10 @@ const SignUpForm = () => {
         password
       );
 
+      // TODO: show to user that successfully created a new user
+
       await createUserDocumentFromAuth(user, { displayName });
-      // show to user that successfully created a new user
+
       resetFormFields();
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
