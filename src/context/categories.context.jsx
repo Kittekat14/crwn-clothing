@@ -12,7 +12,7 @@ export const CategoriesProvider = ({ children }) => {
     // always create new function (then call it afterwards) when you use an async helper function
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
-      console.log(categoryMap);
+
       setCategoriesMap(categoryMap);
     };
 
